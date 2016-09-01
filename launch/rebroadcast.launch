@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="transform_rebroadcaster" type="transform_rebroadcaster_node" name="rebroadcaster" clear_params="true" output="screen">
+		<!-- Connection Parameters -->
+		<param name="input_transform" value="/vicon/cicada/cicada" type="str"/>
+		<param name="output_pose" value="/uav_current_position" type="str"/>
+	</node>
+</launch>
