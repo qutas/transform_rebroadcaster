@@ -28,7 +28,6 @@ void tf_callback( const geometry_msgs::TransformStamped::ConstPtr& msg ) {
 }
 
 int main( int argc, char **argv ) {
-
 	//==== Initialize node ====//
 	ros::init( argc, argv, "transform_rebroadcaster" );
 	ros::NodeHandle nh( ros::this_node::getName() );
