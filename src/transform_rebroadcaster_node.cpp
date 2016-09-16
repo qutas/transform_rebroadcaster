@@ -11,7 +11,7 @@ geometry_msgs::PoseStamped pose_out;
 void tf_callback( const geometry_msgs::TransformStamped::ConstPtr& msg ) {
 	//==== Header ====//
 	pose_out.header.seq = msg->header.seq;
-	pose_out.header.stamp = msg->header.stamp;
+	pose_out.header.stamp = ros::Time::now();
 	pose_out.header.frame_id = msg->header.frame_id;
 
 	//==== Position ====//
